@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:veseeta/pages/home_page.dart';
+import 'package:veseeta/pages/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
       designSize: Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
-        title: 'Veseeta',
+        title: 'Vezeeta',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
           useMaterial3: true,
         ),
-        home: const HomePage(),
+        home: const BottomNavBar(),
       ),
     );
   }
