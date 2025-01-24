@@ -15,14 +15,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0.w, vertical: 16),
+        padding: EdgeInsets.symmetric(horizontal: 20.0.w, vertical: 16.h),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const MyAppBar(),
               SizedBox(height: 32.h),
-              SizedBox(width: 327.w, height: 155.h, child: DoctorCard()),
+              DoctorCard(),
               SizedBox(height: 20.h),
               MySearchTextFormField(
                 controller: TextEditingController(),
@@ -39,6 +39,7 @@ class HomePage extends StatelessWidget {
               ),
               SizedBox(height: 16.h),
               NearDoctorCard(),
+              SizedBox(height: 16.h),
             ],
           ),
         ),
