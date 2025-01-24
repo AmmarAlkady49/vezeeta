@@ -5,6 +5,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
 import 'package:veseeta/pages/home_page.dart';
+import 'package:veseeta/pages/profile_page.dart';
 import 'package:veseeta/pages/schedule_page.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -20,7 +21,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     HomePage(),
     SchedulePage(),
     HomePage(),
-    SchedulePage(),
+    ProfilePage(),
   ];
   @override
   Widget build(BuildContext context) {
