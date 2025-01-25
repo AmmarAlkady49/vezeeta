@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:veseeta/generated/l10n.dart';
 import 'package:veseeta/widgets/schedule_card_doctor.dart';
 
 class SchedulePage extends StatelessWidget {
@@ -11,22 +12,22 @@ class SchedulePage extends StatelessWidget {
       [
         'assets/images/doctorImage3.png',
         'Dr. Bessie Coleman',
-        'Dental Specialist'
+        S.of(context).dental_specialist,
       ],
       [
         'assets/images/doctorImage4.png',
         'Dr. Babe Didrikson',
-        'Dental Specialist'
+        S.of(context).dental_specialist,
       ],
       [
         'assets/images/doctorImage.png',
         'Dr. Imran Syahir',
-        'General Doctor',
+        S.of(context).general_doctor,
       ],
       [
         'assets/images/doctorImage2.png',
         'Dr. Joseph Brostito',
-        'Dental Specialist'
+        S.of(context).dental_specialist,
       ],
     ];
     return SingleChildScrollView(

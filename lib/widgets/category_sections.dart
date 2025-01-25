@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
+import 'package:veseeta/generated/l10n.dart';
 
 class CategorySections extends StatelessWidget {
   const CategorySections({super.key});
@@ -12,13 +13,13 @@ class CategorySections extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         buildCategorySection(
-            title: 'Covid 19', addressSVG: 'assets/images/covid_19.svg'),
+            title: S.of(context).covid, addressSVG: 'assets/images/covid_19.svg'),
         buildCategorySection(
-            title: 'Doctor', addressSVG: 'assets/images/profile-add.svg'),
+            title: S.of(context).doctors, addressSVG: 'assets/images/profile-add.svg'),
         buildCategorySection(
-            title: 'Medicine', addressSVG: 'assets/images/capsuol.svg'),
+            title: S.of(context).medicine, addressSVG: 'assets/images/capsuol.svg'),
         buildCategorySection(
-            title: 'Hospital', addressSVG: 'assets/images/hospital.svg'),
+            title: S.of(context).hospitals, addressSVG: 'assets/images/hospital.svg'),
       ],
     );
   }

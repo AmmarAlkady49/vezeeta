@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
 import 'package:veseeta/core/utils/font_helper.dart';
+import 'package:veseeta/generated/l10n.dart';
 
 class NearDoctorCard extends StatelessWidget {
   const NearDoctorCard({super.key});
@@ -54,7 +55,7 @@ class NearDoctorCard extends StatelessWidget {
                         ),
                         SizedBox(height: 2.h),
                         Text(
-                          'Dental Specialist',
+                          S.of(context).dental_specialist,
                           style: FontHelper.myFont(
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w400,
@@ -71,7 +72,7 @@ class NearDoctorCard extends StatelessWidget {
                           color: AppColors.secondaryTextColor3,
                         ),
                         SizedBox(width: 2.w),
-                        Text('1.2 KM',
+                        Text('1.2 ${S.of(context).KM}',
                             style: FontHelper.myFont(
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400,
@@ -87,12 +88,12 @@ class NearDoctorCard extends StatelessWidget {
                   children: [
                     buildAppointmentDateRow(context,
                         icon: CupertinoIcons.star_lefthalf_fill,
-                        title: '4,8 (120 Reviews)',
+                        title: '4,8 (120 ${S.of(context).reviews})',
                         color: AppColors.myOrange),
-                    SizedBox(width: 30.w),
+                    Spacer(),
                     buildAppointmentDateRow(context,
                         icon: Iconsax.clock,
-                        title: 'Open at 17.00',
+                        title: '${S.of(context).open_at} 17.00',
                         color: AppColors.primaryColor),
                   ],
                 )

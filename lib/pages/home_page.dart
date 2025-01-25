@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
 import 'package:veseeta/core/utils/font_helper.dart';
+import 'package:veseeta/generated/l10n.dart';
 import 'package:veseeta/widgets/category_sections.dart';
 import 'package:veseeta/widgets/doctor_card.dart';
 import 'package:veseeta/widgets/my_app_bar.dart';
@@ -31,13 +32,13 @@ class HomePage extends StatelessWidget {
               CategorySections(),
               SizedBox(height: 24.h),
               Text(
-                'Nearby Doctors',
+                S.of(context).nearby_doctors,
                 style: FontHelper.myFont(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w600,
                     color: AppColors.primaryTextColor),
               ),
-              SizedBox(height: 16.h),
+              SizedBox(height: 12.h),
               NearDoctorCard(),
               SizedBox(height: 16.h),
             ],

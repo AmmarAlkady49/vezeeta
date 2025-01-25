@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
 import 'package:veseeta/core/utils/font_helper.dart';
+import 'package:veseeta/generated/l10n.dart';
 
 class ScheduleCardDoctor extends StatelessWidget {
   final String imageAddress;
@@ -20,7 +21,7 @@ class ScheduleCardDoctor extends StatelessWidget {
       onTap: () {},
       borderRadius: BorderRadius.circular(12),
       child: Container(
-        height: 230.h,
+        height: 225.h,
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
@@ -76,27 +77,24 @@ class ScheduleCardDoctor extends StatelessWidget {
                       icon: Iconsax.calendar_2,
                       title: 'Sunday, 12 June',
                       color: AppColors.secondaryTextColor3),
-                  SizedBox(width: 30.w),
+                  Spacer(),
                   buildAppointmentDateRow(context,
                       icon: Iconsax.clock,
-                      title: '11:00 - 12:00 AM',
+                      title:
+                          '11:00 ${S.of(context).AM} - 12:00 ${S.of(context).PM}',
                       color: AppColors.secondaryTextColor3),
                 ],
               ),
               SizedBox(height: 12.h),
-              // InkWell(
-              //   onTap: () {},
-              //   child: ,
-              // ),
               TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(
                   backgroundColor: AppColors.primaryColor.withOpacity(0.1),
                   padding:
-                      EdgeInsets.symmetric(horizontal: 120.w, vertical: 8.h),
+                      EdgeInsets.symmetric(horizontal: 118.w, vertical: 8.h),
                 ),
                 child: Text(
-                  'Detail',
+                  S.of(context).details,
                   style: FontHelper.myFont(
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w500,

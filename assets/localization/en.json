@@ -1,6 +1,8 @@
 {
     "hello": "Hello",
-    "hi there" : "Hi James",
-    "hint-text-search": "Search doctor or health issue"
-
+    "hi there": "Hi James",
+    "hint-text-search": "Search doctor or health issue",
+    "profile-page": "Profile Page",
+    "general": "General",
+    "language": "Language"
 }

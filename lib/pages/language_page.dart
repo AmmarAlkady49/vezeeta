@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
 import 'package:veseeta/core/utils/font_helper.dart';
+import 'package:veseeta/generated/l10n.dart';
+import 'package:veseeta/home_cubit/home_cubit.dart';
 
 class LanguagePage extends StatelessWidget {
   const LanguagePage({super.key});
@@ -11,7 +13,7 @@ class LanguagePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
       appBar: AppBar(
-        title: Text('Language'),
+        title: Text(S.of(context).language),
         centerTitle: true,
         backgroundColor: AppColors.primaryColor,
         shadowColor: Colors.black,
@@ -25,12 +27,16 @@ class LanguagePage extends StatelessWidget {
         child: Column(
           children: [
             chooseLang(
-              onTap: () {},
+              onTap: () {
+                HomeCubit().changeLanguage('en');
+              },
               title: 'English',
             ),
             SizedBox(height: 16.h),
             chooseLang(
-              onTap: () {},
+              onTap: () {
+                HomeCubit().changeLanguage('ar');
+              },
               title: 'العربيه',
             ),
           ],
@@ -46,7 +52,7 @@ class LanguagePage extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(6.0),
         decoration: BoxDecoration(
-          border: Border.all(color: Colors.black38),
+          border:  Border.all(color: Colors.black38),
           color: Colors.white.withOpacity(0.6),
           borderRadius: BorderRadius.circular(12.r),
         ),
