@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:veseeta/core/config/config.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
 import 'package:veseeta/core/utils/font_helper.dart';
+import 'package:veseeta/generated/l10n.dart';
 
 class MyAppBar extends StatelessWidget {
   const MyAppBar({super.key});
@@ -17,8 +18,7 @@ class MyAppBar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              // 'Hello,',
-              Config.Localization['hello'],
+              S.of(context).hello,
               style: FontHelper.myFont(
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w400,
@@ -26,7 +26,7 @@ class MyAppBar extends StatelessWidget {
               ),
             ),
             Text(
-              'Hi James',
+              S.of(context).hi_there,
               style: FontHelper.myFont(
                 fontSize: 20.sp,
                 fontWeight: FontWeight.w700,

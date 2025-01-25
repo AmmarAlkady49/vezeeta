@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
 import 'package:veseeta/core/utils/font_helper.dart';
+import 'package:veseeta/generated/l10n.dart';
 
 class DoctorCard extends StatelessWidget {
   const DoctorCard({super.key});
@@ -51,7 +52,7 @@ class DoctorCard extends StatelessWidget {
                         ),
                         SizedBox(height: 2.h),
                         Text(
-                          'General Doctor',
+                          S.of(context).general_doctor,
                           style: FontHelper.myFont(
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w400,
@@ -76,9 +77,12 @@ class DoctorCard extends StatelessWidget {
                   children: [
                     buildAppointmentDateRow(context,
                         icon: Iconsax.calendar_2, title: 'Sunday, 12 June'),
-                    SizedBox(width: 30.w),
+                    // SizedBox(width: 30.w),
+                    Spacer(),
                     buildAppointmentDateRow(context,
-                        icon: Iconsax.clock, title: '11:00 - 12:00 AM'),
+                        icon: Iconsax.clock,
+                        title:
+                            '11:00 ${S.of(context).AM} - 12:00 ${S.of(context).PM}'),
                   ],
                 )
               ],

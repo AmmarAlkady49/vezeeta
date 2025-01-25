@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
 import 'package:veseeta/core/utils/font_helper.dart';
+import 'package:veseeta/generated/l10n.dart';
 import 'package:veseeta/pages/language_page.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -13,7 +14,7 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
       appBar: AppBar(
-        title: Text('Profile Page'),
+        title: Text(S.of(context).profile),
         centerTitle: true,
         backgroundColor: AppColors.primaryColor,
         shadowColor: Colors.black,
@@ -28,7 +29,7 @@ class ProfilePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'General',
+              S.of(context).general,
               style: FontHelper.myFont(
                   fontSize: 18.sp,
                   fontWeight: FontWeight.w600,
@@ -47,7 +48,7 @@ class ProfilePage extends StatelessWidget {
                   color: AppColors.primaryTextColor,
                 ),
                 title: Text(
-                  'Language',
+                  S.of(context).language,
                   style: FontHelper.myFont(
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w600,

@@ -1,0 +1,51 @@
+// DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
+// This is a library that provides messages for a ar locale. All the
+// messages from the main program should be duplicated here with the same
+// function name.
+
+// Ignore issues from commonly used lints in this file.
+// ignore_for_file:unnecessary_brace_in_string_interps, unnecessary_new
+// ignore_for_file:prefer_single_quotes,comment_references, directives_ordering
+// ignore_for_file:annotate_overrides,prefer_generic_function_type_aliases
+// ignore_for_file:unused_import, file_names, avoid_escaping_inner_quotes
+// ignore_for_file:unnecessary_string_interpolations, unnecessary_string_escapes
+
+import 'package:intl/intl.dart';
+import 'package:intl/message_lookup_by_library.dart';
+
+final messages = new MessageLookup();
+
+typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
+
+class MessageLookup extends MessageLookupByLibrary {
+  String get localeName => 'ar';
+
+  final messages = _notInlinedMessages(_notInlinedMessages);
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "AM": MessageLookupByLibrary.simpleMessage("ص"),
+    "KM": MessageLookupByLibrary.simpleMessage("كم"),
+    "PM": MessageLookupByLibrary.simpleMessage("م"),
+    "chat": MessageLookupByLibrary.simpleMessage("دردشة"),
+    "covid": MessageLookupByLibrary.simpleMessage("كورونا"),
+    "dental_specialist": MessageLookupByLibrary.simpleMessage("أخصائي الأسنان"),
+    "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
+    "doctors": MessageLookupByLibrary.simpleMessage("الأطباء"),
+    "general": MessageLookupByLibrary.simpleMessage("عام"),
+    "general_doctor": MessageLookupByLibrary.simpleMessage("طبيب العام"),
+    "hello": MessageLookupByLibrary.simpleMessage("صباح الخير"),
+    "hi_there": MessageLookupByLibrary.simpleMessage("أهلآ محمد"),
+    "hint_text_search": MessageLookupByLibrary.simpleMessage(
+      "إبحث عن الدكتور او المشكلة الصحية",
+    ),
+    "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+    "hospitals": MessageLookupByLibrary.simpleMessage("مستشفي"),
+    "language": MessageLookupByLibrary.simpleMessage("اللغة"),
+    "medicine": MessageLookupByLibrary.simpleMessage("أدوية"),
+    "nearby_doctors": MessageLookupByLibrary.simpleMessage("الأطباء القريبين"),
+    "open_at": MessageLookupByLibrary.simpleMessage("مفتوح في"),
+    "profile": MessageLookupByLibrary.simpleMessage("الحساب"),
+    "profile_page": MessageLookupByLibrary.simpleMessage("الصفحة الشخصية"),
+    "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
+    "schedule": MessageLookupByLibrary.simpleMessage("المواعيد"),
+  };
+}

@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:veseeta/core/utils/app_colors.dart';
+import 'package:veseeta/generated/l10n.dart';
 import 'package:veseeta/pages/home_page.dart';
 import 'package:veseeta/pages/profile_page.dart';
 import 'package:veseeta/pages/schedule_page.dart';
@@ -64,7 +65,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   iconColor: _selectedIndex != 0
                       ? AppColors.secondaryTextColor3
                       : null,
-                  text: 'Home',
+                  text: S.of(context).home,
                 ),
                 GButton(
                   icon: _selectedIndex == 1
@@ -73,7 +74,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   iconColor: _selectedIndex != 1
                       ? AppColors.secondaryTextColor3
                       : null,
-                  text: 'Schedule',
+                  text: S.of(context).schedule,
                 ),
                 GButton(
                   icon:
@@ -81,7 +82,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   iconColor: _selectedIndex != 2
                       ? AppColors.secondaryTextColor3
                       : null,
-                  text: 'Chat',
+                  text: S.of(context).chat,
                 ),
                 GButton(
                   icon: _selectedIndex == 3
@@ -90,7 +91,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   iconColor: _selectedIndex != 3
                       ? AppColors.secondaryTextColor3
                       : null,
-                  text: 'Profile',
+                  text: S.of(context).profile,
                 ),
               ],
               selectedIndex: _selectedIndex,
